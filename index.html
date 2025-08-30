@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Call - Betnix Calls & Chats</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+    <header>
+        <h1></h1>
+        <div id="controls">
+            <button id="muteBtn">Mute</button>
+            <button id="videoBtn">Stop Video</button>
+            <button id="screenBtn">Share Screen</button>
+            <button id="handBtn">Raise Hand</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="videos">
+            <div class="video-card">
+                <video id="localVideo" autoplay muted></video>
+                <div class="label" id="label_local">Me</div>
+            </div>
+        </div>
+
+        <div id="chat">
+            <div id="messages"></div>
+            <div class="input-group">
+                <input type="text" id="messageInput" placeholder="Type a message">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/simple-peer@9.11.1/simplepeer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reconnecting-websocket@4.4.0/dist/reconnecting-websocket.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
